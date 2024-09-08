@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from "../assets/food-1.jpeg"
-import { FaBars } from "react-icons/fa6";
-import { IoIosCheckboxOutline } from "react-icons/io";
+// import logo from "../assets/food-1.jpeg"
+// import { FaBars } from "react-icons/fa6";
+import { FaForumbee } from "react-icons/fa";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
     <nav>
         <div className="container nav__container">
-            <Link to="/" className="navLogo">
-                <img src={logo} alt="" />
+            <Link to="/" className='nav__logo'>
+              <FaForumbee  className="navbar logo"/>
             </Link>
             <ul className="nav_">
                 <li><Link to="/profile">Zikrah </Link></li>
@@ -18,8 +19,9 @@ const Header = () => {
                 <li><Link to="/logout">Logout</Link></li>
             </ul>
             <button className="navToggle-btn">
-            <FaBars />
-            <IoIosCheckboxOutline />
+
+            <IoCloseCircleOutline />
+            {/* <FaBars /> */}
             </button>
         </div>
     </nav>
