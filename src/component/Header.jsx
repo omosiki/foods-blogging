@@ -13,7 +13,7 @@ const Header = () => {
               <FaForumbee  className="navbar logo"/>
             </Link>
             <ul className="nav_meun">
-                <li><Link to="/profile">Zikrah </Link></li>
+                <li><Link to="/profile/sdfsdf">Zikrah </Link></li>
                 <li><Link to="/create">Create Post</Link></li>
                 <li><Link to="/author">Authors</Link></li>
                 <li><Link to="/logout">Logout</Link></li>
